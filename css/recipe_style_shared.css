@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* use border-box in universal selector here so that the height and width specified is the actual one */
+    /* */
+    box-sizing: border-box;
+}
+
+.l {
+    background-color: red;
+    /* padding occurs inside the element, space between the text and the box */
+    padding: 5px ;
+    border: 5px solid purple; 
+    margin: 100px;
+    /* width: 100px;
+    height: 100px; */
+    width: 574px;
+    height: 37px;
+ 
+
+    /* width and height, affects the element/text itself, padding, and border will still be added individually */
+    /* total box size vertical = height + 2*padding + 2*border*/
+    /* total box size horizontal = width + 2*padding + 2*border*/
+    /* width: 100px;
+    height: 100px; */
+    
+    /* to make SPECIFIED width and height be the actual width and height of the box */
+    /* e.i. including the PADDING AND BORDERS*/
+    /* use this: */
+    /* box-sizing: border-box; */
+
+    /* IMPORTANT - but if total sum of padding and height is larger than width/height, total w&h will be NOT be equal to SPECIFIED */
+    
+
+}
+
+ /* margin collapses between two elements that are next to each other*/
+ /* both share a margin and whichever margin that is the largest, will be used */
+/* however, it doesn't collapse horizontally - inline elements such as <img> and <a> */
+.pie {
+    background-color: red;
+    padding: 20px ;
+    border: 20px solid purple; 
+    margin: 70px
+    /* margin-top: 100px;
+    margin-bottom: 10px; */
+}
+
+img {
+    background-color: red;
+    padding: 20px ;
+    border: 20px solid purple; 
+    /* margin-top: 20px; */
+}
+
+a{
+    background-color: red;
+    padding: 20px ;
+    border: 20px solid purple; 
+    margin: 20px
+
+}
+
+/* h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    color: red;
+}
+
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+h2, h3 {
+    background-color: darkturquoise;
+    font-size: 35px
+}
+
+ol,ul {
+    font-size: 25px;
+}
+
+ul {
+    background-color: red;
+}
+
+ol {
+    background-color: coral;
+} */
